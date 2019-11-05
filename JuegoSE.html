@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<script>
+		var turno=1;
+		var num_casilla=0;
+		var num_casilla2=0;
+		function girarDado(){
+			var num = Math.floor(Math.random()*6)+1;
+			
+			document.getElementById("dado").src="cara"+num+".jpg";
+			document.getElementById("dado").width="100";
+			
+		console.log(num_casilla);
+
+			if(turno==1){
+				if(Jugador1.value==""){
+					alert("El nombre del jugador1 es obligatorio");
+                       
+                        document.getElementById("c"+num_casilla).style.border="0px solid white ";
+                   
+                     
+
+
+				}
+			if(num_casilla==0){
+				console.log("c"+num_casilla);
+				
+				num_casilla=num;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+				}
+				
+
+			 else if(num_casilla+num>110){
+			 	console.log("c"+num_casilla);
+			document.getElementById("c"+num_casilla).style.border="0px solid white";
+			num_casilla=(num_casilla+num)-110;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}else{
+				
+			document.getElementById("c"+num_casilla).style.border="0px solid white";
+
+				var nc= num_casilla+num;
+				num_casilla=nc;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==10){
+				
+				document.getElementById("c"+num_casilla).style.border="0px solid white "; 
+				num_casilla=11;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==13){
+				
+				document.getElementById("c"+num_casilla).style.border="0px solid white "; 
+				num_casilla=8;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==20){
+				
+				document.getElementById("c"+num_casilla).style.border="0px solid white "; 
+				num_casilla=21;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==25){
+				
+				document.getElementById("c"+num_casilla).style.border="0px solid white"; 
+				num_casilla=16;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador2";
+			}
+			if(num_casilla==27){
+				
+				document.getElementById("c"+num_casilla).style.border="0px solid white "; 
+				num_casilla=34;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==30){
+				
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=31;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==38){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=23;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==40){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=41;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==50){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=51;
+			document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==52){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=69;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==53){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=48;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==59){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=42;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==60){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=61;
+			document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==64){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=77;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==66){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=55;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==70){
+				console.log("c"+num_casilla);
+			document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=71;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==72){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=89;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==80){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=81;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==82){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=79;
+				document.getElementById("c"+num_casilla).style.border="0px solid ";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+			if(num_casilla==86){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=95;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}if(num_casilla==88){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=73;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}if(num_casilla==90){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=91;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}if(num_casilla==97){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=84;
+			document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}if(num_casilla==99){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=102;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}if(num_casilla==100){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=101;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}if(num_casilla==103){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white";
+				num_casilla=98;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}if(num_casilla==109){
+				console.log("c"+num_casilla);
+				document.getElementById("c"+num_casilla).style.border="0px solid white ";
+				num_casilla=92;
+				document.getElementById("c"+num_casilla).style.border="3px solid blue";
+				turno=2;
+				document.getElementById("turno").innerHTML="Jugador1"+":"+Jugador1.value;
+			}
+
+			if(num_casilla==110){
+			
+				alert("Gano el Jugador"+" "+Jugador1.value);
+				
+			}
+}//////////////////////////////////////////////////////////////////////////////////////////////////////////
+else{
+	if(Jugador2.value==""){
+					alert("El nombre del jugador2 es obligatorio");
+                       
+                        document.getElementById("c"+num_casilla2).style.border="0px solid white ";
+ 
+				}
+	if(num_casilla2==0){
+		console.log("c"+num_casilla2);
+				
+				num_casilla2=num;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+				}
+			
+			else if(num_casilla2+num>110){
+				console.log("c"+num_casilla2);
+			document.getElementById("c"+num_casilla2).style.border="#f5f5f5";
+			num_casilla2=(num_casilla2+num)-110;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}else{
+				
+			document.getElementById("c"+num_casilla2).style.border="#f5f5f5";
+
+				var nc= num_casilla2+num;
+				num_casilla2=nc;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==10){
+				
+				document.getElementById("c"+num_casilla2).style.border="0px solid white ";
+				num_casilla2=11;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==13){
+				
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=8;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==20){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=21;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==25){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white ";
+				num_casilla2=16;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==27){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=34;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==30){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white ";
+				num_casilla2=31;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==38){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=23;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==40){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=41;
+			document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==50){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=51;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==52){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=69;
+			document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==53){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=48;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==59){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=42;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==60){
+				console.log("c"+num_casilla2);
+			document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=61;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==64){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=77;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==66){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=55;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==70){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=71;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==72){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=89;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==80){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=81;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==82){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=79;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+			if(num_casilla2==86){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=95;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}if(num_casilla2==88){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=73;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}if(num_casilla2==90){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=91;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}if(num_casilla2==97){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=84;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}if(num_casilla2==99){
+				console.log("c"+num_casilla2);
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=102;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}if(num_casilla2==100){
+				
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=101;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}if(num_casilla2==103){
+				
+				document.getElementById("c"+num_casilla2).style.border="0px solid white";
+				num_casilla2=98;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}if(num_casilla2==109){
+				
+				document.getElementById("c"+num_casilla2).style.border="0px solid white ";
+				num_casilla2=92;
+				document.getElementById("c"+num_casilla2).style.border="3px solid red";
+				turno=1;
+				document.getElementById("turno").innerHTML="Jugador2"+":"+Jugador2.value;
+			}
+
+			if(num_casilla2==110){
+				
+			
+				alert("Gano el Jugador"+" "+Jugador2.value);
+				
+			}
+}
+			
+		
+	}
+		function creaTablero(){
+			
+			for(var i=110; i>=1; i--){
+				
+				document.getElementById("tablero").innerHTML+='<div '+'class="col-xs-1 well" id="casilla'+i+'">'+'<div class="text-center casilla">'+i+'</div>'+'</div>';
+			}
+			
+}
+
+		
+	</script>
+<style type="text/css">
+section#principal{
+	display:inline-block;
+	margin:0 auto;
+	text-align: center;
+	width:100%;
+}
+article#comandos{
+	display: inline-block;
+	border:1px solid lightgray;
+	min-height: 80px;
+	vertical-align: top;
+	width:25%;
+}
+input[type="text"]{
+	font-size:1em;
+	margin:0.2em;
+	padding:0.1em;
+}
+label{
+	font-size: :1em;
+	font-weight: :bold;
+	text-align: center;
+}
+.botonInicial{
+color#77d;
+background-color:#77d;
+}
+.botonJugador1{
+color:white;
+background-color:#d77;
+}
+.botonJugador2{
+color:white;
+background-color:#7d7;
+}
+</style>	
+</head>
+<body>
+	<div class="container">
+		<h1>Serpientes y Escaleras</h1><hr>
+		<div>
+		<h1 id="turno"></h1>
+	</div>
+		<div class="row">
+			<article id="Jugador">
+			Jugador 1:
+			<input type="text" id="Jugador1" name="Jugador1" placeholder="Nombre"><br>
+			Jugador 2:
+			<input type="text" id="Jugador2" name="Jugador2" placeholder="Nombre"><br>
+						
+		
+	</article>
+			<button class="btn btn-primary" onclick="girarDado()">Girar dado</button>
+			<img src="" alt="" id="dado" width="100px">
+</div><br>
+		
+	<div class="row" id="tablero">
+	<div class="col-xs-6">
+			<table border="1">
+
+				
+				<tr>
+
+
+					<td id="c110"><img src="110.jpg" width="60px"></td>
+					<td id="c109"><img src="109.jpg" width="60px"></td>
+					<td id="c108"><img src="108.jpg" width="60px"></td>
+					<td id="c107"><img src="107.jpg" width="60px"></td>
+					<td id="c106"><img src="106.jpg" width="60px"></td>
+					<td id="c105"><img src="105.jpg" width="60px"></td>
+					<td id="c104"><img src="104.jpg" width="60px"></td>
+					<td id="c103"><img src="103.jpg" width="60px"></td>
+					<td id="c102"><img src="102.jpg" width="60px"></td>
+					<td id="c101"><img src="101.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c91"><img  src="91.jpg" width="60px"></td>
+					<td id="c92" ><img  src="92.jpg" width="60px"></td>
+					<td id="c93"><img  src="93.jpg" width="60px"></td>
+					<td id="c94"><img  src="94.jpg" width="60px"></td>
+					<td id="c95"><img  src="95.jpg" width="60px"></td>
+					<td id="c96"><img  src="96.jpg" width="60px"></td>
+					<td id="c97"><img  src="97.jpg" width="60px"></td>
+					<td id="c98"><img  src="98.jpg" width="60px"></td>
+					<td id="c99"><img  src="99.jpg" width="60px"></td>
+					<td id="c100"><img  src="100.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c90"><img  src="90.jpg" width="60px"></td>
+					<td id="c89"><img  src="89.jpg" width="60px"></td>
+					<td id="c88"><img  src="88.jpg" width="60px"></td>
+					<td id="c87"><img  src="87.jpg" width="60px"></td>
+					<td id="c86"><img  src="86.jpg" width="60px"></td>
+					<td id="c85"><img  src="85.jpg" width="60px"></td>
+					<td id="c84"><img  src="84.jpg" width="60px"></td>
+					<td id="c83"><img  src="83.jpg" width="60px"></td>
+					<td id="c82"><img  src="82.jpg" width="60px"></td>
+					<td id="c81"><img  src="81.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c71"><img  src="71.jpg" width="60px"></td>
+					<td id="c72"><img  src="72.jpg" width="60px"></td>
+					<td id="c73"><img  src="73.jpg" width="60px"></td>
+					<td id="c74"><img  src="74.jpg" width="60px"></td>
+					<td id="c75"><img  src="75.jpg" width="60px"></td>
+					<td id="c76"><img  src="76.jpg" width="60px"></td>
+					<td id="c77"><img  src="77.jpg" width="60px"></td>
+					<td id="c78"><img  src="78.jpg" width="60px"></td>
+					<td id="c79"><img  src="79.jpg" width="60px"></td>
+					<td id="c80"><img  src="80.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c70"><img  src="70.jpg" width="60px"></td>
+					<td id="c69"><img  src="69.jpg" width="60px"></td>
+					<td id="c68"><img  src="68.jpg" width="60px"></td>
+					<td id="c67"><img  src="67.jpg" width="60px"></td>
+					<td id="c66"><img  src="66.jpg" width="60px"></td>
+					<td id="c65"><img  src="65.jpg" width="60px"></td>
+					<td id="c64"><img  src="64.jpg" width="60px"></td>
+					<td id="c63"><img  src="63.jpg" width="60px"></td>
+					<td id="c62"><img  src="62.jpg" width="60px"></td>
+					<td id="c61"><img  src="61.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c51"><img  src="51.jpg" width="60px"></td>
+					<td id="c52"><img  src="52.jpg" width="60px"></td>
+					<td id="c53"><img  src="53.jpg" width="60px"></td>
+					<td id="c54"><img  src="54.jpg" width="60px"></td>
+					<td id="c55"><img  src="55.jpg" width="60px"></td>
+					<td id="c56"><img  src="56.jpg" width="60px"></td>
+					<td id="c57"><img  src="57.jpg" width="60px"></td>
+					<td id="c58"><img  src="58.jpg" width="60px"></td>
+					<td id="c59"><img  src="59.jpg" width="60px"></td>
+					<td id="c60"><img  src="60.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c50"><img  src="50.jpg" width="60px"></td>
+					<td id="c49"><img  src="49.jpg" width="60px"></td>
+					<td id="c48"><img  src="48.jpg" width="60px"></td>
+					<td id="c47"><img  src="47.jpg" width="60px"></td>
+					<td id="c46"><img  src="46.jpg" width="60px"></td>
+					<td id="c45"><img  src="45.jpg" width="60px"></td>
+					<td id="c44"><img  src="44.jpg" width="60px"></td>
+					<td id="c43"><img  src="43.jpg" width="60px"></td>
+					<td id="c42"><img  src="42.jpg" width="60px"></td>
+					<td id="c41"><img  src="41.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c31"><img  src="31.jpg" width="60px"></td>
+					<td id="c32"><img  src="32.jpg" width="60px"></td>
+					<td id="c33"><img  src="33.jpg" width="60px"></td>
+					<td id="c34"><img  src="34.jpg" width="60px"></td>
+					<td id="c35"><img  src="35.jpg" width="60px"></td>
+					<td id="c36"><img  src="36.jpg" width="60px"></td>
+					<td id="c37"><img  src="37.jpg" width="60px"></td>
+					<td id="c38"><img  src="38.jpg" width="60px"></td>
+					<td id="c39"><img  src="39.jpg" width="60px"></td>
+					<td id="c40"><img  src="40.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c30"><img  src="30.jpg" width="60px"></td>
+					<td id="c29"><img  src="29.jpg" width="60px"></td>
+					<td id="c28"><img  src="28.jpg" width="60px"></td>
+					<td id="c27"><img  src="27.jpg" width="60px"></td>
+					<td id="c26"><img  src="26.jpg" width="60px"></td>
+					<td id="c25"><img  src="25.jpg" width="60px"></td>
+					<td id="c24"><img  src="24.jpg" width="60px"></td>
+					<td id="c23"><img  src="23.jpg" width="60px"></td>
+					<td id="c22"><img  src="22.jpg" width="60px"></td>
+					<td id="c21"><img  src="21.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c11"><img  src="11.jpg" width="60px"></td>
+					<td id="c12"><img  src="12.jpg" width="60px"></td>
+					<td id="c13"><img  src="13.jpg" width="60px"></td>
+					<td id="c14"><img  src="14.jpg" width="60px"></td>
+					<td id="c15"><img  src="15.jpg" width="60px"></td>
+					<td id="c16"><img  src="16.jpg" width="60px"></td>
+					<td id="c17"><img  src="17.jpg" width="60px"></td>
+					<td id="c18"><img  src="18.jpg" width="60px"></td>
+					<td id="c19"><img  src="19.jpg" width="60px"></td>
+					<td id="c20"><img  src="20.jpg" width="60px"></td>
+				</tr>
+				<tr>
+
+					<td id="c10"><img  src="10.jpg" width="60px"></td>
+					<td id="c9"><img  src="9.jpg" width="60px"></td>
+					<td id="c8"><img  src="8.jpg" width="60px"></td>
+					<td id="c7"><img  src="7.jpg" width="60px"></td>
+					<td id="c6"><img  src="6.jpg" width="60px"></td>
+					<td id="c5"><img  src="5.jpg" width="60px"></td>
+					<td id="c4"><img  src="4.jpg" width="60px"></td>
+					<td id="c3"><img  src="3.jpg" width="60px"></td>
+					<td id="c2"><img  src="2.jpg" width="60px"></td>
+					<td id="c1"><img  src="1.jpg" width="60px"></td>
+				</tr>
+			</table>
+
+	</div>
+</div>
+
+</body>
+</html>
